@@ -14,6 +14,10 @@
 
 LOCAL_PATH := vendor/samsung/kyleproxx
 
+#G-Apps
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/kyleproxx/gapps,system)
+
+
 ifeq ($(findstring kyleprods,$(TARGET_PRODUCT)),kyleprods)
     PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRODS.so:system/lib/libbrcm_ril.so \
