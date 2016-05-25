@@ -17,7 +17,6 @@ LOCAL_PATH := vendor/samsung/kyleproxx
 #G-Apps
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/kyleproxx/gapps,system)
 
-
 ifeq ($(findstring kyleprods,$(TARGET_PRODUCT)),kyleprods)
     PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/proprietary/lib/libbrcm_ril_KYLEPRODS.so:system/lib/libbrcm_ril.so \
@@ -196,8 +195,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/keylayout/bcm_keypad_v2.kl:/system/usr/keylayout/bcm_keypad_v2.kl \
     $(LOCAL_PATH)/proprietary/usr/keylayout/gpio-keys.kl:/system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/proprietary/usr/keylayout/samsung-keypad.kl:/system/usr/keylayout/samsung-keypad.kl \
-    $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:/system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
-    $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:/system/usr/lib/alsa-lib/libbcm_hp_filter.so \
-    $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:/system/usr/lib/alsa-lib/libbcm_test_filter.so \
-    $(LOCAL_PATH)/proprietary/usr/share/alsa/alsa.conf:/system/usr/share/alsa/alsa.conf
     $(LOCAL_PATH)/proprietary/usr/share/alsa/alsa.conf:/system/usr/share/alsa/alsa.conf
